@@ -3,16 +3,6 @@
 #include <vector>
 #include "class.hpp"
 
-//global variables
-int books;
-int libraries;
-int days;
-vector<int> bookScore;
-
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
 int main(int argc, char *argv[]) {
   //setup all infile object constants
   std::ifstream infile;
@@ -32,11 +22,6 @@ int main(int argc, char *argv[]) {
   }
 
   //initialization of objects
-<<<<<<< Updated upstream
-  for(int i = 0; i < libraries; ++i)
-  {
-
-=======
   std::vector<Library> libraries;
   for(int i = 0; i < libraries.size(); ++i) {
     //creation of library specific variables
@@ -61,12 +46,7 @@ int main(int argc, char *argv[]) {
     }
     std::cout << libraries[i].signup << std::endl;
     std::cout << libraries[i].throughput << std::endl;
->>>>>>> Stashed changes
   }
 
-  for(int i = 0; i < books; ++i)
-  {
-    bookScore.pushback(0);
-  }
   return 0;
 }
