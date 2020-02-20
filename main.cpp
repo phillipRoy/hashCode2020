@@ -4,10 +4,9 @@
 #include "class.hpp"
 
 //global variables
-int books;
-int libraries;
-int days;
-vector<int> bookScore;
+int totNumBooks;
+int totNumLibraries;
+int totNumDays;
 
 
 int main(int argc, char **argv[]) {
@@ -16,19 +15,11 @@ int main(int argc, char **argv[]) {
   infile.open(argv[1]); //open file specified by command line argument
 
   //assign file values to variables
-  infile >> books; //number of books
-  infile >> libraries; //number of libraries
-  infile >> days; // number of days until deadline
+  infile >> totNumBooks; //number of books
+  infile >> totNumLibraries; //number of libraries
+  infile >> totNumDays; // number of days until deadline
 
-  //initialization of objects
-  for(int i = 0; i < libraries; ++i)
-  {
 
-  }
 
-  for{int i = 0; i < books; ++i}
-  {
-    bookScore.pushback(0);
-  }
   return 0;
 }

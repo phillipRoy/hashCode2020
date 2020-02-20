@@ -8,24 +8,21 @@ class Input{
 
 public:
   Input();
-  Input(struct query,struct libraryData, std::vector<int> bookScore);
+  Input(struct query,struct libraryData);
   ~Input();
 
 private:
-  struct query{
-    int totBooks;
-    int numLibraries;
-    int numDaysToScan;
-  };
+  // struct query{
+  //   int totBooks;
+  //   int numLibraries;
+  //   int numDaysToScan;
+  // };
 
   struct libraryData{
     int numBooks;
     int signupTime;
     int scanVolume;
   };
-
-  std::vector<bool>bookScore;
-  
 
 };
 
