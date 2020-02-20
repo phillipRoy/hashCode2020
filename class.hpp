@@ -1,8 +1,16 @@
 #include <iostream>
+#include <vector>
 
-class helloWorld {
+class Library {
 public:
-  helloWorld() {
-    std::cout << "Hello World";
-  }
+  //public constructor
+  Library(int numberOfBooks, int signUpDuration, int bookThroughput)
+    : signup(signUpDuration),
+      throughput(bookThroughput)
+  {Books.resize(numberOfBooks);}
+
+  //Instance Variables
+  std::vector<int> Books;
+  int signup;
+  int throughput;
 };
