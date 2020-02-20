@@ -1,11 +1,14 @@
 #include <iostream>
 #include <fstream>
+#include <vector>
 #include "class.hpp"
 
 //global variables
 int books;
 int libraries;
 int days;
+vector<int> bookScore;
+
 
 int main(int argc, char **argv[]) {
   //setup all infile object constants
@@ -18,6 +21,14 @@ int main(int argc, char **argv[]) {
   infile >> days; // number of days until deadline
 
   //initialization of objects
+  for(int i = 0; i < libraries; ++i)
+  {
 
+  }
+
+  for{int i = 0; i < books; ++i}
+  {
+    bookScore.pushback(0);
+  }
   return 0;
 }
